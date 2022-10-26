@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <ul>
+        <h3>Protokoły warstwy transportu:</h3>
+        <li>TCP</li>
+        <li>UDP</li>
+    </ul>
+
+    <ul>
+        <h3>Najważniejsze zadania dotyczące warstwy transportu:</h3>
+        <li>nawiązanie i obsuła połączeń pomiędzy hostami</li>
+        <li>śledzenie połączeń między hostami</li>
+        <li>podział danych</li>
+        <li>identyfikowanie aplikacji</li>
+        <li>kontrola przepływu danych</li>
+        <li>retransmisja w przypadku utraty danych</li>
+    </ul>
+    
+    <h3>
+        Organizacja zajmująca się przydzielaniem numerów portów to IANA (Internet Numbers Authority), 
+        która podzieliła porty na 3 poszczególne grupy:
+    </h3>
+
+    <img src="iana.png" alt="grupy portów IANA">
+    <img src="iana2.png" alt="protokoły działające na portach">
+
+    <h3>
+        !WAŻNE <br>
+        Działanie kilku aplikacji na tym samym porcie nie jest możliwe.
+        <br>
+        <br>
+        Socket - To kombinacja adresu IP oraz numeru portu (120.223.21.213:80) odpowiadająca
+        za proces działający na urządzeniu
+        <br>
+        <br>
+        Protokół TCP - to połączeniowy protokół, którego użycie gwarantuje niezawodne dostarczanie danych oraz
+        kontrolę przepływu. W procesie enkapsulacji do nagłówka TCP dodawane jest 20 bajtów danych sterujących.
+        <br>
+        <br>
+        Wzór segmentu TCP:
+    </h3>
+
+    <img src="segmenty-protokolu-tcp.png" alt="Segmenty protokołu TCP">
+
+    <ul>
+        <h4>Port źródłowy:</h4>
+        <li>Port aplikacji, z której wysłano dane</li>
+        <h4>Port docelowy:</h4>
+        <li>Port aplikacji, do której wysłano dane</li>
+        <h4>Numer sekwencyjny:</h4>
+        <li>Numer ostatniego najtu w segmencie</li>
+        <h4>Numer </h4>
+        <li></li>
+    </ul>
+
+</body>
+</html>
