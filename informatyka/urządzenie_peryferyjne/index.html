@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksploatacja urządzeń peryferyjnych | Podsumowanie</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Just-Koi/web-note@latest/dist/webnote.css">
+    <link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Just-Koi/web-note@latest/webnote.png" type="image/x-icon">
+    <meta name="keywords" content="TA, technikum, akademickie, informatyka, urządzenia, peryferyjne">
+    <meta name="description" content="Notatkiiiii z urządzeń">
+    <meta name="author" content="Kacper Marciniak 2CTI">
+</head>
+<body class="dark-note">
+    <header>
+        <h1 class="color-yellow">
+            Interfejsy urządzeń peryferyjnych
+        </h1>
+    </header>
+    <main>
+        <section>
+            <article>
+                <ul class="list-square color-blue">
+                    <h3 class="color-yellow fw-900">Rodzaje transmisji danych:</h3>
+                    <li><span class="color-pink fw-500">szeregowa -></span> bit po bicie</li>
+                    <li><span class="color-pink fw-500">równoległa -></span> cały bajt po bajcie</li>
+                    <li><span class="color-pink fw-500">synchroniczna -></span> informacje są przesyłane w jednakowych odstępach czawoych</li>
+                    <li><span class="color-pink fw-500">asynchroniczna -></span> informacje są przesyłane w dowolnych odstępach czasowych</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Rodzaje Interfejsów:</h3>
+                    <li><span class="color-pink fw-500">COM -></span> szeregowy</li>
+                    <li><span class="color-pink fw-500">LPT -></span> równoległy</li>
+                    <li><span class="color-pink fw-500">USB -></span> szeregowy</li>
+                    <li><span class="color-pink fw-500">FireWire -></span> szeregowy</li>
+                    <li><span class="color-pink fw-500">irDA -></span> bezprzewodowy</li>
+                    <li><span class="color-pink fw-500">Bluetooth -></span> bezprzewodowy</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Interfejs USB:</h3>
+                    <li><span class="color-pink fw-500">Standardy -></span> 1.0, 1.1, 2.0, 3.0, 3.1, 3.2, 4.0</li>
+                    <li><span class="color-pink fw-500">Liczba urządzeń do podłączenia -></span> 127</li>
+                    <li><span class="color-pink fw-500">Liczba komputerów do podłączenia -></span> 1</li>
+                    <li><span class="color-pink fw-500">Możliwość podłączenia większości dostępnych produktów -></span> Tak</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Kontrolery USB:</h3>
+                    <li><span class="color-pink fw-500">Zewnętrzne -></span> Hub usb</li>
+                    <li><span class="color-pink fw-500">Wewnętrzne -></span> karta pci</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Interfejs FireWire:</h3>
+                    <li>
+                        <span class="color-pink fw-500">Parametry:</span><br>
+                        <ul class="list-arrow p-1">
+                            <li>Szybkość przesyłania do 3200 Mb/s</li>
+                            <li>Długość kabla do 4,5m</li>
+                            <li>Liczba urządzeń do podłączenia 63</li>
+                            <li>Liczba komputerów do podłączenia 63</li>
+                            <li>Możliwość podłączenia kamer cyfrowych, kart muzycznych, mikserów, przenośnych dysków</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <span class="color-pink fw-500">Standardy:</span><br>
+                        <ul class="list-arrow p-1">
+                            <li>400 Mb/s</li>
+                            <li>800 Mb/s</li>
+                            <li>1600 Mb/s</li>
+                            <li>3200 Mb/s</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Interfejs IrDA:</h3>
+                    <li>
+                        <span class="color-pink fw-500">Parametry i standardy:</span><br>
+                        <ul class="list-arrow p-1">
+                            <li>SIR</li>
+                            <li>FIR</li>
+                            <li>Zasięg do 3m</li>
+                            <li>Liczba urządzeń do podłączenia 2</li>
+                            <li>Liczba komputerów do podłączenia 2</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Interfejs Bluetooth:</h3>
+                    <li>
+                        <span class="color-pink fw-500">Parametry i standardy:</span><br>
+                        <ul class="list-arrow p-1">
+                            <li>1.0</li>
+                            <li>1.1</li>
+                            <li>1.2</li>
+                            <li>2.0</li>
+                            <li>3.0</li>
+                            <li>3.1</li>
+                            <li>4.0</li>
+                            <li>4.1</li>
+                            <li>4.2</li>
+                            <li>5</li>
+                            <li>5.1</li>
+                            <li>5.2</li>
+                            <li>5.3</li>
+                            <li>Zasięg do 100m</li>
+                            <li>Liczba urządzeń do podłączenia 255</li>
+                            <li>Możliwość podłączenia prawie wszystkich urządzeń</li>
+                        </ul>
+                    </li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Urządzenia peryferyjne wejścia:</h3>
+                    <li>Mysz</li>
+                    <li>Klawiatura</li>
+                    <li>Skaner</li>
+                    <li>Tablet</li>
+                    <li>Tuner TV</li>
+                    <li>Piotrek</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Urządzenia peryferyjne wyjścia:</h3>
+                    <li>drukarka</li>
+                    <li>monitor</li>
+                    <li>ploter</li>
+                    <li>streamer</li>
+                    <li>głośniki</li>
+                    <li>Władek</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Urządzenia peryferyjne wejścia-wyjścia:</h3>
+                    <li>urządzenia wielofunkcyjne</li>
+                    <li>modem zewnętrzny</li>
+                    <li>Tymek</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Interfejsy Klawiatur:</h3>
+                    <li>PS/2</li>
+                    <li>USB</li>
+                    <li>podczerwień</li>
+                    <li>Bluetooth</li>
+                    <li>fale radiowe</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Rodzaje urządzeń wskazujących:</h3>
+                    <li>mysz komputerowa</li>
+                    <li>trackball</li>
+                    <li>pióro świetlne</li>
+                    <li>touchpad</li>
+                    <li>tablet z rysikiem</li>
+                    <li>joystick</li>
+                    <li>ekran dotykowy</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Rodzaje drukarek:</h3>
+                    <li>igłowe</li>
+                    <li>atramentowe</li>
+                    <li>laserowe</li>
+                    <li>sublimacyjne</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Parametry drukarek:</h3>
+                    <li>roździelczość wydruku</li>
+                    <li>prędkość wydruku</li>
+                    <li>interfejs</li>
+                    <li>wydajność</li>
+                    <li>pamięć</li>
+                    <li>formaty nośników</li>
+                    <li>rodzaj materiałów Eksploatacyjnych</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Drukarka igłowa:</h3>
+                    <li>niski koszt eksploatacji</li>
+                    <li>możliwość drukowania kilku kopii na papierze samokopiującym</li>
+                    <li>druk na długim papierze</li>
+                    <li>niska jakość druku</li>
+                    <li>powolna i głośna praca</li>
+                    <li>Są wielo lub jednoigłowicowe</li>
+                    <li>Interfejs: USB, LPT</li>
+                    <li>Liczba igieł: 24</li>
+                    <li>Liczba kopii: 4</li>
+                    <li>Prędkość druku: 390 znaków na sekundę</li>
+                    <li>Roździelczość: 360x360</li>
+                    <li>Szerokość wydruku: 15 cali</li>
+                    <li>Zainstalowana pamięć: 64KB</li>
+                    <li>Podawanie papieru: ręcznie, traktor tylny</li>
+                    <li>Głośność: 54dB</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Drukarka atramentowa oraz sublimacyjna: </h3>
+                    <li>Interfejs: USB, Ethernet</li>
+                    <li>Maks. format nośnika: A4</li>
+                    <li>Maks. prędkość wydruku mono: 16 str./min.</li>
+                    <li>Maks. prędkość wydruku kol.: 12 str./min.</li>
+                    <li>Roździelczość: 4800 x 1200</li>
+                    <li>Podajnik papieru: 100 kartek</li>
+                    <li>Zainstalowana pamięć: 32MB</li>
+                    <li>Nadruk na CD, DVD</li>
+                    <li>Nadruk na kopertach</li>
+                    <li>Praca w sieci</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Drukarki laserowe: </h3>
+                    <li>Interfejs: USB, Ethernet</li>
+                    <li>Maks. format nośnika: A4</li>
+                    <li>Maks. prędkość wydruku: 16 str./min.</li>
+                    <li>Roździelczość: 600x600</li>
+                    <li>Wydajność: 5000 str./mieś.</li>
+                    <li>Podajnik papieru: 150 stron</li>
+                    <li>Zainstalowana pamięć: 2MB</li>
+                    <li>Wydajność materiału eksploatacyjnego: 1500 stron</li>
+                    <li>Praca w sieci</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Skanery: </h3>
+                    <li>Skaner ręczny</li>
+                    <li>Skaner płaski</li>
+                    <li>Skaner bębnowy</li>
+                    <li>Skaner do slajdów</li>
+                    <li>Skaner kodów kreskowych</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <table class="p-1">
+                <tr class="color-yellow">
+                    <th class="px-1">
+                        <h2>Zastosowanie skanera</h2>
+                    </th>
+                    <th class="px-1">
+                        <h2>Roździelczość skanera</h2>
+                    </th>
+                    <th class="px-1">
+                        <h2>Średnia wielkość pliku skanera</h2>
+                    </th>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            grafika czarno-biała
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            600
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            1 MB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            fotografia czarno-biała
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            300
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            2 MB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            negatyw kolorowy
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            1200
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            6 MB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            fotografia kolorowa
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            300
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            6 MB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            wydruk laserowy grafiki
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            300
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            260 kB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            wydruk laserowy fotografii
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            150
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            520 kB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            OCR
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            300
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            260 kB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            grafika na stronę WWW
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            75
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            130 kB
+                        </h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="px-1 color-pink">
+                        <h3>
+                            fotografia na stronę WWW
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            75
+                        </h3>
+                    </td>
+                    <td class="px-1">
+                        <h3>
+                            400 kB
+                        </h3>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <article>
+                <ul class="list-square color-blue">
+                    <br>
+                    <h3 class="color-yellow fw-900">Parametry skanerów:</h3>
+                    <li>Roździelczość optyczna: 600x1200 dpi</li>
+                    <li>Roździelczość interplanowana: np.19200x19200</li>
+                    <li>Czas skanowania: 30 sekund</li>
+                    <li>Głębia kolorów: np.48b</li>
+                    <li>Głebia szarości: np.16b</li>
+                    <li>Maks. format skanowania: np.A4,A3</li>
+                    <li>Interfejs: USB,LPT,SCSI</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Urządzenia wielofunkcyjne - <span class="color-beige">to połączenia kilku urządzeń w jedno</span></h3>
+                    <h4 class="color-yellow p-1">Główne funkcje:</h4>
+                    <li class="px-2">drukowanie</li>
+                    <li class="px-2">skanowanie</li>
+                    <li class="px-2">kopiowanie</li>
+                    <li class="px-2">faksowanie</li>
+                    <h4 class="color-yellow p-1">Rodzaje:</h4>
+                    <li class="px-2">atramentowe</li>
+                    <li class="px-2">laserowe</li>
+                    <h4 class="color-yellow p-1">Parametry:</h4>
+                    <li class="px-2">Interfejs: USB, Ethernet, Wi-Fi</li>
+                    <li class="px-2">Technologia druku: atramentowa lub laserowa</li>
+                    <li class="px-2">Maks. format nośnika: A4/A3</li>
+                    <li class="px-2">Maks. prędkość druku mono 33 str./min.</li>
+                    <li class="px-2">Maks. prędkość druku kolor: 25 str./min.</li>
+                    <li class="px-2">Roździelczość wydruku: 4800x2400 dpi</li>
+                    <li class="px-2">Roździelczość skanowania: 1200x2400 dpi</li>
+                    <li class="px-2">Głębia kolorów skanowania: 48b</li>
+                    <li class="px-2">Zmniejszanie / Powiększanie: 25-400%</li>
+                    <li class="px-2">Podajnik papieru: 250 kartek</li>
+                    <li class="px-2">Zainstalowana pamięć: 32 MB</li>
+                    <li class="px-2">Wbudowany czytnik kart: SD, MMC, XD Pic.</li>
+                    <li class="px-2">Praca w sieci</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Plotery</h3>
+                    <h4 class="color-yellow">Zbudowane są z:</h4>
+                    <li>wózka z pisakiem, główicą natryskującą lub laserem wraz z zepsołem napędowym</li>
+                    <li>urządzenia do przesuwu materiału</li>
+                    <li>układów sterujących</li>
+                    <h4 class="color-yellow">Rodzaje:</h4>
+                    <li>ploter kreślący</li>
+                    <li>ploter atramentowy</li>
+                    <li>ploter laserowy</li>
+                    <li>ploter solwentowy</li>
+                    <li>ploter grawerujący</li>
+                    <li>ploter tnący</li>
+                    <h4 class="color-yellow">Parametry:</h4>
+                    <li>Prędkość pracy podawana w mm/s</li>
+                    <li>Obszar pracy</li>
+                    <li>Roździelczość kreślenia</li>
+                    <li>Dokładność</li>
+                    <li>Rodzaj napędu - silnik krokowy</li>
+                    <li>Formaty plików wejściowych: BM, CDR, PSD, AI, DST, DXF</li>
+                    <li>Rodzaje portów: Centronics, RS 232, USB</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Aparaty i kamery cyfrowe</h3>
+                    <h4 class="color-yellow">Budowa aparatu cyfrowego:</h4>
+                    <li>obiektyw</li>
+                    <li>migawki</li>
+                    <li>korpus światłoszczelny</li>
+                    <li>przetwornik obrazu</li>
+                    <li>przetwornik analagowo-cyfrowy</li>
+                    <li>pamieć do przechowywania obrazów</li>
+                    <li>układ zasilania</li>
+                    <li>wizjer</li>
+                    <li>lampa błyskowa</li>
+                    <li>panel LCD</li>
+                    <li>układ sterowania</li>
+                    <h4 class="color-yellow">Rodzaje aparatów cyfrowych:</h4>
+                    <li>lustrzanki</li>
+                    <li>kompaktowe</li>
+                    <li>kieszonkowe</li>
+                    <h4 class="color-yellow">Parametry aparatów cyfrowych:</h4>
+                    <li>Wielkość matrycy 8mpx (megapiskeli)</li>
+                    <li>Maksymalna roździelczość zdjęć: 3264x2448</li>
+                    <li>Maksymalna roździelczość sekwencji wideo: 640x480</li>
+                    <li>Obsługiwane karty pamięci: SD, SDHC, MMC</li>
+                    <li>Ogniskowa obiektywu: np.38-114mm</li>
+                    <li>Maksymalny zoom optyczny: np.x3</li>
+                    <li>Maksymalny zoom cyfrowy: np.x4</li>
+                    <li>Przekątna wyświetlacza LCD: np.2,5"</li>
+                    <li>Format zapisu wideo: np. AVI</li>
+                    <li>Dodatkowe funkcje: wykrywanie twarze, redukcja edektu czerwonych oczu</li>
+                    <h4 class="color-yellow">Parametry kamer cyfrowych:</h4>
+                    <li>Format zapisu: Standard Video; High Deinition</li>
+                    <li>Rodzaj nośnika: dysk twardy, kartka pamięci, kaseta MiniDV</li>
+                    <li>Rodzaj przetwornika</li>
+                    <li>Maksymalny zoom optyczny: np.x40</li>
+                    <li>Maksymalny zoom cyfrowy: np.x2000</li>
+                    <li>Dodatkowe funkcje: stabilizator obrazu, tryb nocny, możliwość wykonywania zdjęć</li>
+                    <li>Wielkość wyświetlacza: np.2,7"</li>
+                    <li>Wyjścia: HDMI, USB, DV, AV</li>
+                    <h4 class="color-yellow">Parametry kamer internetowych:</h4>
+                    <li>Interfejs: USB 2.0</li>
+                    <li>Typ czujnika, np. CMOS</li>
+                    <li>Maksymalna roździelczość: 640x480</li>
+                    <li>Dodatkowe funkcje: możliwość wykonywania zdjęć, wbudowany mikrofon</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Systemy głośników: </h3>
+                    <li>2.0 - dwa głośniki satelitarne</li>
+                    <li>2.1 - dwa głośniki satelitarne + subwoofer</li>
+                    <li>4.1 - cztery głośniki satelitarne + subwoofer</li>
+                    <li>5.1 - cztery głośniki satelitarne + subwoofer + głośnik centralny</li>
+                    <li>6.1 - pięć głośników satelitarnych + subwoofer + głośnik centralny</li>
+                    <li>7.1 - sześć głośników satelitarnych + subwoofer + głośnik centralny</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Monitory CRT</h3>
+                    <h4 class="color-yellow">Rodzaje monitorów:</h4>
+                    <li>CRT</li>
+                    <li>LCD</li>
+                    <li>PDP</li>
+                    <li>OLED</li>
+                    <h4 class="color-yellow">Rodzaje i cechy monitorów CRT:</h4>
+                    <li>Z maską perforowaną: zaokrąglnienia ekranu, zniekształcenia ekranu</li>
+                    <li>Z maską szczelinową: w 1/3 i 2/3 ekranu poziome kreski, bardzo wrażliwy na pole elektromagnetyczne</li>
+                    <li>Z maską kratową: bardzo dobre parametry, idealnie płaski ekran, krótka część tylna</li>     
+                    <h4 class="color-yellow">Parametry monitorów CRT (ViewSonic G220fb):</h4>
+                    <li>Długość przekątnej: np.21"</li>
+                    <li>Roździelczość: np.2048x1536</li>
+                    <li>Odświeżanie: np.180Hz</li>
+                    <li>Sposób wyświetlania: Przeplot</li>
+                    <li>Standard zarządzania energią</li>
+                    <li>Funkcja rozmagnesowania maski kineskopu</li>
+                    <li>Cyfrowe sterowanie menu (OSD)</li>
+                    <li>Złącza sygnałowe: np.D-SUB</li>
+                    <li>Normy emisji promieniowania</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Monitory LCD:</h3>
+                    <h4 class="color-yellow">Rodzaj paneli:</h4>
+                    <li>TN/TFT</li>
+                    <li>MVA</li>
+                    <li>PVA</li>
+                    <li>IPS</li>
+                    <h4 class="color-yellow">Parametry monitorów LCD:</h4>
+                    <li>Długość przekątnej: np.24"</li>
+                    <li>Roździelczość: np.1440x960</li>
+                    <li>Typ matrycy: np.TN/TFT</li>
+                    <li>Format obrazu: np.4:3</li>
+                    <li>Jasność: np.400cd/m2</li>
+                    <li>kontrast: np.1000000:1</li>
+                    <li>kąt widzenia: 160/160 stopni</li>
+                    <li>Czas reakcji: 8ms</li>
+                    <li>Funkcje: Pivot, montaż vesa</li>
+                    <li>Spełnia normy</li>
+                    <li>Złącza sygnałowe: np.HDMI</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <table class="p-1">
+                <tr class="color-yellow">
+                    <th class="p-1">
+                        <h2>Parametr</h2>
+                    </th>
+                    <th class="p-1">
+                        <h2>CRT</h2>
+                    </th>
+                    <th class="p-1">
+                        <h2>LCD</h2>
+                    </th>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>przekątna</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>część zakryta obudową</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>rzeczywista</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>rozmiary</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>zajmuje dużo miejsca</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>zajmuje niewiele miejsca</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>roździelczość</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>dowolna</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>zalecana</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>pivot</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>nie</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>możliwe</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>promieniowanie</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>duże</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>brak</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>cena</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>zależnie, zazwyczaj są tańsze</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>zależnie, zazwyczaj droższe od crt</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>zużycie energii</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>duże</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>mniejsze</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>możliwość montażu VESA</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>mózg sobie zawiesz</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>tak lol</h3>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <article>
+                <ul class="list-square color-blue">
+                    <br>
+                    <h3 class="color-yellow fw-900">Wyświetlacze plazmowe i OLED</h3>
+                    <h4 class="color-yellow">Cechy monitorów plazmowych:</h4>
+                    <li>Płaski ekran</li>
+                    <li>Możliwość budowy ekranów o większych rozmiarach</li>
+                    <li>Trudności technologiczne przy budowie mniejszych rozmiarów</li>
+                    <li>Ekran jest stosunkowo cienki</li>
+                    <li>Szeroki kąt widzenia</li>
+                    <li>Wysoka jakość tworzonego obrazu</li>
+                    <li>Mała podatność na zniekształcenia obrazu spowodowane polem magnetycznym</li>
+                    <h4 class="color-yellow">Zalety minitorów plazmowych:</h4>
+                    <li>Cienkie, łatwe do montażu VESA</li>
+                    <li>Szerszy kąt widzenia, łatwiej strzelać hedy, lepsze kolory</li>
+                    <li>lepszy współczynnik kontrastu niż w wyświetlaczach LCD</li>
+                    <li>większa głębia czerni niż w wyświetlaczach LCD</li>
+                    <li>Żywotność ekranu ok. 27 lat</li>
+                    <li>Dużo krótszy czas reakcji niż w LCD</li>
+                    <h4 class="color-yellow">Wady monitorów plazmowych:</h4>
+                    <li>Większa masa</li>
+                    <li>Zużywa więcej energii</li>
+                    <li>Są kruche, podatne na stłuczenia</li>
+                    <li>Występuje tendencja do nierównego wypalenia luminoforu</li>
+                    <li>Jest jaśniejszy przez pierwsze 2000 godzin</li>
+                    <li>Przy wyświetlaniu obrazu o bardzo wysokim kontraście pojawiają się efekty tęczy</li>
+                    <li>Przy dłuższym oglądaniu męczy wzrok</li>
+                    <br>
+                    <h4 class="color-yellow">Parametry monitorów plazmowych</h4>
+                    <li>Długość przękątnej: np.40"</li>
+                    <li>Roździelczość: np.1920x1080</li>
+                    <li>Kąty widzenia: np.178 stopni</li>
+                    <li>Format obrazu: 16:9</li>
+                    <li>Jasność, np.1500 cd/m2</li>
+                    <li>kontrast: np.50000:1</li>
+                    <li>Żywotność: np.100 000 godzin</li>
+                    <li>Złącza sygnałowe: np.HDMI, DisplayPort</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <table class="p-1">
+                <tr class="color-yellow">
+                    <th class="p-1">
+                        <h2>Parametr</h2>
+                    </th>
+                    <th class="p-1">
+                        <h2>LCD</h2>
+                    </th>
+                    <th class="p-1">
+                        <h2>PDP</h2>
+                    </th>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>Przekątna</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>15"-50+"</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>30"-90+"</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>kąt widzenia</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>do 170"</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>do 178"</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>zużycie energii</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>niewielkie</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>dwa razy większe niż LCD</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>inne</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>słabszy kąt widzenia, mniejsza głębia czerni, mniejsza masa niż PDP</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>Na początku użytkowania jaśniejszy obraz, nierównomiernie się wypala</h3>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <article>
+                <ul class="color-blue list-square">
+                    <br>
+                    <h3 class="color-yellow fw-900">Monitory OLED</h3>
+                    <h4 class="color-yellow">Zalety:</h4>
+                    <li>Mają większą skalę barw i jasność</li>
+                    <li>Nie wymagają podświetlenia, nieskończony kontrast</li>
+                    <li>Kąt widzenia: 180"</li>
+                    <li>Czas reakcji, praktycznie zerowy</li>
+                    <li>Produkcja jest mniej szkodliwa</li>
+                    <li>Możliwość produkcji zwijanych wyświetlaczy</li>
+                    <h4 class="color-yellow">Wady:</h4>
+                    <li>Ograniczona żywotność</li>
+                    <li>Rozwój technologii jest ograniczony</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <table class="p-1">
+                <tr class="color-yellow">
+                    <th class="p-1">
+                        <h2>Parametr</h2>
+                    </th>
+                    <th class="p-1">
+                        <h2>LCD</h2>
+                    </th>
+                    <th class="p-1">
+                        <h2>OLED</h2>
+                    </th>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>podświetlenie</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>lampa lub diody</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>nie wymaga</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>kąt widzenia</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>do 170"</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>do 180"</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>kontrast</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>1000-50000:1</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>do 1000000:1</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>czas reakcji</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>2-25ms</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>0.01ms</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>żywotność</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>nieokreślona</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>ograniczona</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1 color-pink">
+                        <h3>inne</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>mniejsza skala barw i jasności</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>produkcja mniej szkodliwa dla środowiska</h3>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <article>
+                <ul class="list-square color-blue">
+                    <br>
+                    <h3 class="color-yellow fw-900">Projektory</h3>
+                    <h4 class="color-yellow">Rodzaje:</h4>
+                    <li>LCD</li>
+                    <li>DLP</li>
+                </ul>
+            </article>
+        </section>
+        <section>
+            <h1 class="color-purple fw-900">Projektor DLP</h1>
+            <table class="p-1">
+                <tr class="color-yellow">
+                    <th class="p-1">
+                        <h2>Roździelczość</h2>
+                    </th>
+                    <th class="p-1">
+                        <h2>Skrót</h2>
+                    </th>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1">
+                        <h3>640x640</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>VGA</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1">
+                        <h3>800x600</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>SVGA</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1">
+                        <h3>1024x768</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>XGA</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1">
+                        <h3>1280x1024</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>SXGA</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1">
+                        <h3>1600x1200</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>UXGA</h3>
+                    </td>
+                </tr>
+                <tr class="color-blue">
+                    <td class="p-1">
+                        <h3>1920x1080</h3>
+                    </td>
+                    <td class="p-1">
+                        <h3>HDTV</h3>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <article>
+                <ul class="list-square color-blue">
+                    <h3 class="color-yellow fw-900">Parametry projektora</h3>
+                    <li>technologia LCD lub DLP</li>
+                    <li>roździelczość np.SVGA</li>
+                    <li>jasność np.2700 ANSI Lumen</li>
+                    <li>moc lampy np.180W</li>
+                    <li>żywotność lampy(normal) np.5000 godzin</li>
+                    <li>żywotność lampy(eko) np.6000 godzin</li>
+                    <li>kontrast np.4000:1</li>
+                    <li>format obrazu 4:3 lub 16:9</li>
+                    <li>minimalna wielkość obrazu 23"</li>
+                    <li>Maksymalna wielkość obrazu, zależy</li>
+                    <li>Wejścia: np.D-SUB, S-Video, Composite RCA, USB</li>
+                    <li>Wyjścia: np.D-SUB</li>
+                    <li>Wyposażenie np.pilot</li>
+                    <li>Dodatkowe opcje np.wifi, głośniki</li>
+                    <br>
+                    <h3 class="color-yellow fw-900">Materiały eksploatacyjne do drukarek</h3>
+                    <h4 class="color-yellow">Rodzaje:</h4>
+                    <li>Pojemnik z taśmą nasączoną tuszem</li>
+                    <li>pojemnik z tuszem</li>
+                    <li>pojemnik z tonerem</li>
+                </ul>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <h1 class="color-purple fw-900">
+            NARESZCIE!!!!!!!! tylko 3 godziny i 30 minut roboty.. jestem głodny.. kupcie mi żelki :33333
+        </h1>
+    </footer>
+</body>
+</html>
